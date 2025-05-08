@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+body{
+    background-color: rgb(255, 0, 0); 
+}
+header{
+    background-color: #000;
+    height: 390px;
+    border-end-start-radius: 30px;
+    border-end-end-radius: 30px;
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    justify-content: left;
+}
+.nav_logo{
+    background-color: #000;
+}
+.nav_container {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    z-index: 1000;
+    background-color: #000;
+}
+nav{
+    display: flex;
+    gap: 3px;
+    padding: 2px;
+}
+nav a{
+    
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 1s;
+
+}
+nav a:hover{
+    color: red;
+    padding: 15px;
+    border-style: outset;
+    border-color: #ff0000;
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 900px;
+}
+
+
+.img{
+    width: 200px;
+    height: 360px;
+    border-radius: 50%;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+
+.nafijul{
+    color: red;
+}
+
+button{
+    color: #ff0000;
+    background-color: rgb(0, 0, 0);
+    border-color: #ff0000;
+    border-radius: 40px;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 40px;
+    transition: all 0.5s;
+}
+
+button:hover{
+    color: #ffffff;
+    background-color: #ff0000;
+} 
+
+/*suggestion*/
+
+.main_sug{
+    background-color: #ff0000;
+    height: 700px;
+    padding-top: 50px;
+}
+
+.sug_book{
+    background-image: url("images-pica.png");
+    
+    background-size: 350px 600px;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 350px;
+    transition: all 4s;
+}
+.sug_book:hover{
+    background-image: url("Harrys_Nimbus_2000__2_-removebg-preview-pica.png");
+}
+
+.main_sug{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*book */
+
+.book{
+    position: relative;
+    width: 192px;
+    height: 264px;
+    cursor: pointer;
+}
+.book_cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    transition: 1s;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px;
+}
+
+.book:hover .book_cover{
+    transform: perspective(20px) rotateX(2deg) translateY(-50px);
+}
+
+.main_character{
+    position: absolute;
+    width: 192px;
+    height: 264px;
+    background-size: 100%;
+    background-repeat: 10px;
+    transition: 1s;
+}
+
+.book:hover .main_character{
+    
+    transform: translateY(-200px) translateX(-10px);
+}
+
+/* book cover */
+#harry_pottre_c{
+    background-image: url("harry\ pottre\ cov.jpg");
+}
+#harry_pottre{
+    background-image: url("harry\ pottre.png");
+}
+
+/*icchapuron*/
+
+#icchapuron_c {
+    background-image: url("icchapuron cov.jpg");
+}
+
+#icchapuron {
+    background-image: url("Screenshot_30-removebg-preview.png");
+    height: 400px;
+    opacity: 0;
+    background-repeat: no-repeat;
+}
+
+#icchapuron:hover {
+    opacity: 1;
+}
+
+/*বদনাম */
+
+#Badnam_c{
+    background-image: url("bodnam.png");
+}
